@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Учебные проекты по HTML, CSS и SQL: портфолио С. Клевакиной</title>
+  <meta name="description" content="Три учебных проекта: база данных интернет-магазина на MySQL, стенд проверки форм на HTML5 и сайт на GitHub Pages с доменом. Откройте работы и оцените результат.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip" href="#main">Перейти к содержимому</a>
+  <header class="hero">
+    <div class="wrap">
+      <div class="topbar">
+        <p class="brand">София Клевакина</p>
+        <nav aria-label="Основное меню">
+          <a href="index.html">Главная</a>
+          <a href="about.html">О себе</a>
+          <a href="portfolio.html" aria-current="page">Портфолио</a>
+          <a href="contacts.html">Контакты</a>
+        </nav>
+      </div>
+      <div class="hero-grid">
+        <div>
+          <h1>Портфолио: учебные проекты по вёрстке и базам данных</h1>
+          <p class="lead">Три работы, в которых я проектировала данные, проверяла формы в браузере и публиковала сайт в интернете.</p>
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+  <main id="main" class="wrap">
+    <section id="p1">
+      <h2>База данных интернет-магазина sport_shop</h2>
+      <article class="card project wide">
+        <img src="images/project-db.png" alt="Схема базы данных: таблицы categories, products и order_items, связанные стрелками" width="800" height="450" loading="lazy">
+        <div>
+          <h3>Что сделано</h3>
+          <p>Спроектировала схему из пяти таблиц, создала базу в MySQL, заполнила её данными и написала шесть запросов: выручка по месяцам, топ-товары, повторные клиенты и другие.</p>
+          <h3>Технологии</h3>
+          <p class="tags">MySQL · SQL · phpMyAdmin · draw.io</p>
+        </div>
+      </article>
+    </section>
+
+    <section id="p2">
+      <h2>Стенд проверки нативной валидации форм</h2>
+      <article class="card project wide">
+        <img src="images/project-forms.png" alt="Форма регистрации с ошибкой в поле почты и сообщением браузера" width="800" height="450" loading="lazy">
+        <div>
+          <h3>Что сделано</h3>
+          <p>Собрала страницу с десятью формами и выяснила, какие ошибки браузер ловит без JavaScript, а какие пропускает: пробелы, нереальные адреса, опасные ссылки.</p>
+          <h3>Технологии</h3>
+          <p class="tags">HTML5 · атрибуты required, pattern, minlength</p>
+        </div>
+      </article>
+    </section>
+
+    <section id="p3">
+      <h2>Публикация сайта на GitHub Pages</h2>
+      <article class="card project wide">
+        <img src="images/project-pages.png" alt="Адресная строка с галочкой и карточки DNS-записей A и CNAME" width="800" height="450" loading="lazy">
+        <div>
+          <h3>Что сделано</h3>
+          <p>Разместила страницу в репозитории, проверила псевдоним CNAME на локальном сервере и подключила собственное доменное имя через A- и CNAME-записи.</p>
+          <h3>Технологии</h3>
+          <p class="tags">Git · GitHub Pages · DNS</p>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap">
+      <p>© <span data-year>2026</span> София Клевакина. Учебный проект по теме «Принципы работы поисковой системы».</p>
+    </div>
+  </footer>
+  <button type="button" class="to-top" id="toTop" aria-label="Наверх" hidden>↑</button>
+  <script src="js/main.js"></script>
+</body>
+</html>

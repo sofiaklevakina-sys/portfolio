@@ -3,47 +3,49 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>София Клевакина — мини-портфолио</title>
-  <meta name="description" content="Мини-портфолио студентки направления «Информационные системы и технологии»: профессиональные навыки и учебные проекты.">
-  <link rel="stylesheet" href="style.css">
+  <title>Портфолио веб-разработчика: HTML, CSS и SQL — С. Клевакина</title>
+  <meta name="description" content="Портфолио студентки: учебные проекты по HTML, CSS, SQL и GitHub Pages, базы данных и вёрстка. Посмотрите работы и напишите по вопросам практики и стажировки.">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <a class="skip" href="#main">Перейти к содержимому</a>
-
   <header class="hero">
     <div class="wrap">
-      <p class="eyebrow">Мини-портфолио</p>
-      <h1>София Клевакина</h1>
-      <p class="lead">Студентка направления «Информационные системы и технологии». Верстаю страницы на HTML и CSS, проектирую базы данных и пишу SQL-запросы.</p>
-      <nav aria-label="Разделы страницы">
-        <a href="#skills">Навыки</a>
-        <a href="#projects">Проекты</a>
-        <a href="#contacts">Контакты</a>
-      </nav>
+      <div class="topbar">
+        <p class="brand">София Клевакина</p>
+        <nav aria-label="Основное меню">
+          <a href="index.html" aria-current="page">Главная</a>
+          <a href="about.html">О себе</a>
+          <a href="portfolio.html">Портфолио</a>
+          <a href="contacts.html">Контакты</a>
+        </nav>
+      </div>
+      <div class="hero-grid">
+        <div>
+          <h1>Портфолио веб-разработчика: София Клевакина</h1>
+          <p class="lead">Студентка направления «Информационные системы и технологии». Верстаю страницы на HTML и CSS, проектирую базы данных и пишу SQL-запросы.</p>
+        </div>
+        <img class="hero-img" src="images/hero.png" alt="Иллюстрация: окно браузера с заголовком h1 и строками кода в розовых и коричневых тонах" width="1200" height="675">
+      </div>
     </div>
   </header>
 
   <main id="main" class="wrap">
-    <section id="about">
-      <h2>Обо мне</h2>
-      <p>Учусь в РГУ им. А. Н. Косыгина, профиль «Информационные технологии и дизайн». Интересуют веб-разработка, работа с данными и аккуратные, понятные интерфейсы. Ищу практику, где можно применить эти навыки на реальных задачах.</p>
-    </section>
-
-    <section id="skills">
-      <h2>Профессиональные навыки</h2>
+    <section id="do">
+      <h2>Чем я занимаюсь</h2>
       <div class="grid">
         <article class="card">
           <h3>Веб-разработка</h3>
           <ul>
             <li>Семантическая вёрстка на HTML5</li>
             <li>Стили на CSS3, адаптивные макеты</li>
-            <li>Отладка в Chrome и Edge DevTools</li>
+            <li>Отладка в Edge DevTools</li>
           </ul>
         </article>
         <article class="card">
           <h3>Базы данных</h3>
           <ul>
-            <li>MySQL, phpMyAdmin</li>
+            <li>MySQL и phpMyAdmin</li>
             <li>SQL: JOIN, GROUP BY, подзапросы</li>
             <li>ER-диаграммы в draw.io</li>
           </ul>
@@ -52,48 +54,45 @@
           <h3>Инструменты</h3>
           <ul>
             <li>Git и GitHub, GitHub Pages</li>
-            <li>Командная строка, локальные серверы</li>
-            <li>Основы DNS и доменных имён</li>
+            <li>Командная строка и локальные серверы</li>
+            <li>Основы DNS и SEO</li>
           </ul>
         </article>
       </div>
     </section>
 
-    <section id="projects">
-      <h2>Учебные проекты</h2>
+    <section id="featured">
+      <h2>Избранные проекты</h2>
       <div class="grid">
-        <article class="card">
+        <article class="card project">
+          <img src="images/project-db.png" alt="Схема из трёх связанных таблиц categories, products и order_items со стрелками между ними" width="800" height="450" loading="lazy">
           <h3>База данных интернет-магазина</h3>
-          <p>Спроектировала схему из пяти таблиц, создала базу в MySQL, заполнила её данными и написала запросы для выручки, топ-товаров и повторных клиентов.</p>
+          <p>Спроектировала схему из пяти таблиц и написала запросы для выручки и повторных клиентов.</p>
           <p class="tags">MySQL · SQL · draw.io</p>
         </article>
-        <article class="card">
-          <h3>Границы нативной валидации форм</h3>
-          <p>Собрала тестовую страницу с десятью формами и выяснила, какие ошибки браузер ловит без JavaScript, а какие пропускает.</p>
+        <article class="card project">
+          <img src="images/project-forms.png" alt="Форма регистрации с полем почты, подсвеченным красным, и подсказкой браузера об ошибке" width="800" height="450" loading="lazy">
+          <h3>Нативная валидация форм</h3>
+          <p>Проверила на десяти сценариях, какие ошибки браузер ловит без JavaScript.</p>
           <p class="tags">HTML5 · Constraint Validation</p>
         </article>
-        <article class="card">
-          <h3>Публикация сайта на GitHub Pages</h3>
-          <p>Разместила эту страницу в репозитории, настроила псевдоним CNAME и подключила собственное доменное имя через DNS-записи.</p>
+        <article class="card project">
+          <img src="images/project-pages.png" alt="Адресная строка с галочкой и три карточки DNS-записей: две A-записи и CNAME" width="800" height="450" loading="lazy">
+          <h3>Сайт на GitHub Pages</h3>
+          <p>Опубликовала страницу и подключила собственное доменное имя через DNS.</p>
           <p class="tags">Git · GitHub Pages · DNS</p>
         </article>
       </div>
-    </section>
-
-    <section id="contacts">
-      <h2>Контакты</h2>
-      <!-- ЗАМЕНИТЕ адрес почты и ссылку на GitHub на свои -->
-      <ul class="contacts">
-        <li>Почта: <a href="mailto:sofiaklevakina.gmail@example.com">sofiaklevakina.gmail@example.com</a></li>
-        <li>GitHub: <a href="https://github.com/sofiaklevakina-sys">https://github.com/sofiaklevakina-sys</a></li>
-      </ul>
+      <p class="more"><a href="portfolio.html">Смотреть все проекты</a> или <a href="contacts.html">связаться со мной</a></p>
     </section>
   </main>
 
   <footer class="footer">
     <div class="wrap">
-      <p>© 2026 София Клевакина. </p>
+      <p>© <span data-year>2026</span> София Клевакина. Учебный проект по теме «Принципы работы поисковой системы».</p>
     </div>
   </footer>
+  <button type="button" class="to-top" id="toTop" aria-label="Наверх" hidden>↑</button>
+  <script src="js/main.js"></script>
 </body>
 </html>
